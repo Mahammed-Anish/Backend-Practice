@@ -1,0 +1,95 @@
+.todo {
+    text-align: center;
+}
+
+p {
+    margin-left: .6rem; 
+}
+
+.desc {
+    width: 100%;
+    resize: none;
+    margin-top: -.8rem;
+    margin-left: .5rem;
+    border: none;
+    outline: none;
+}
+
+.cd {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cd div {
+    width: 50vw;
+    margin-right: 1rem;
+}
+
+.cd div>p {
+    margin-bottom: 1rem;
+}
+
+.middle {
+    margin-top: -.3rem;
+    border: 1px solid black;
+    height: 3rem;
+    margin-bottom: -.5rem;
+}
+
+.ctgry {
+    cursor: pointer;
+}
+
+.ddate {
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.add {
+    padding: .5rem;
+    width: 9rem;
+    height: 3rem;
+    color: white;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: rgba(128, 128, 128, 0.826);
+}
+
+.delete {
+    padding: .8rem .4rem;
+    width: 9rem;
+    color: white;
+    margin-top: -0.1rem;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(206, 28, 28);
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cat {
+    text-align: center;
+    width: 10rem;
+    height: 2.2rem;
+    margin-top: -.1rem;
+    color: white;
+    padding-top: .6rem;
+    background-color: rgb(26, 120, 26);
+}
