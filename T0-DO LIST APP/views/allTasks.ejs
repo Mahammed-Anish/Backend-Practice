@@ -1,0 +1,21 @@
+<%- layout("/includes/boilerplate") %>
+<body>
+  <!-- <h3 class="text-center mt-2">All Tasks</h3> -->
+  <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mx-auto">
+    <% for(let task of allTasks) {%>
+    <!-- <div class="card col"></div>
+      <div class="card-img-overlay"></div> -->
+    <div class="card">
+      <h4 class="card-title mt-1">Title: <%= task.title %></h4>
+      <h6 class="card-subtitle mb-2 text-body-secondary">
+        Category: <%= task.category %>
+      </h6>
+      <p class="card-text">Description: <%= task.description %></p>
+      <p class="card-text">Deadline: <%=task.date.toString().slice(4,15)%></p>
+      <a href="/delete-task/?id=<%=task._id%>" class="btn btn-danger mb-3"
+        >DELETE TASK</a
+      >
+    </div>
+    <%}%>
+  </div>
+</body>

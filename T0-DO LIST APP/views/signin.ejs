@@ -1,0 +1,32 @@
+<% layout("/includes/boilerplate") %>
+<body>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1 class="text-center mt-3">Sign In Form</h1>
+      <form action="/verify-login" method="post" class="mt-3">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your Password"
+            class="form-control"
+            required
+          />
+        </div>
+        <button class="btn btn-dark mb-2">Login</button>
+        <div>No Account? <a href="/signup">Register Here</a></div>
+      </form>
+    </div>
+  </div>
+</body>

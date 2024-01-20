@@ -1,0 +1,11 @@
+.card {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: first baseline !important;
+  border: none !important;
+  border-radius: 1rem !important;
+  background-color: palegoldenrod !important;
+  margin: 5rem;
+  /* margin: 1rem; */
+}
+
